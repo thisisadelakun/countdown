@@ -1,0 +1,194 @@
+/* COUNT DOWN */
+.countdown {
+  position: relative;
+  min-height: 100vh;
+}
+
+.countdowncol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.countdownmain {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  letter-spacing: 6px;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  color: hsl(345, 95%, 68%);
+  font-size: 36px;
+}
+
+span {
+  text-transform: uppercase;
+  color: hsl(237, 18%, 59%);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 1.2rem;
+  background-image: url('./assets/pattern-hills.svg');
+  background-size: cover;
+}
+
+.footercol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  font-size: 25px;
+}
+
+a {
+  color: hsl(237, 18%, 59%);
+}
+
+a:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+.flip-card {
+  width: 100%;
+  margin: auto;
+}
+
+.flips {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.topFlip {
+  position: relative;
+  background-color: hsl(236, 21%, 26%);
+  height: 3rem;
+  width: 5rem;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+  border-radius: 8px;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.452);
+
+  transform-origin: top;
+  transform: rotateX(0deg);
+  animation: flip-top 0.5s ease-in forwards;
+}
+
+.bottomFlip {
+  position: relative;
+  background-color: hsl(236, 21%, 26%);
+  height: 2.5rem;
+  width: 5rem;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.452);
+
+  animation: flip-bottom 0.5s ease-out 0.5s;
+  transform-origin: top;
+  /* transform: rotateX(90deg); */
+}
+
+.top {
+  position: relative;
+  margin-top: 23.5%;
+}
+
+.bottom {
+  margin-top: -35%;
+}
+
+@media only screen and (max-width: 369px) and (max-height: 650px) {
+  .countdowncol {
+    padding: 5rem 0 10rem 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:369px) {
+  .countdownmain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width:767px) {
+  .countdownmain {
+    gap: 1.5rem;
+  }
+
+  .flips {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 13px;
+  }
+
+  h3 {
+    letter-spacing: 8px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .topFlip {
+    height: 4rem;
+    width: 8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.452);
+  }
+
+  .bottomFlip {
+    height: 3.5rem;
+    width: 8rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.452);
+  }
+
+  .top {
+    position: relative;
+    margin-top: 22%;
+  }
+
+  .bottom {
+    margin-top: -28%;
+  }
+}
