@@ -16,7 +16,7 @@ Users should be able to:
 
 - See hover states for all interactive elements on the page
 - See a live countdown timer that ticks down every second (start the count at 14 days)
-- **Bonus**: When a number changes, make the card flip from the middle
+- When a number changes, make the card flip from the middle
 
 ### Screenshot
 
@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/thisisadelakun/countdown)
 - Live Site URL: [Countdown](https://your-live-site-url.com)
 
 ## My process

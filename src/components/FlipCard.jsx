@@ -6,11 +6,20 @@ function FlipCard({ initialValue, title }) {
 
     useEffect(() => {
         setCurrentValue(String(initialValue).padStart(2, '0'));
+        setFlip(true);
+
+        const timeout = setTimeout(() => {
+            setFlip(false);
+        }, 150);
+
+        return () => {
+            clearTimeout(timeout);
+        };
     }, [initialValue]);
 
     return (
-        <div className="flipcard">
-            <div className='flips'>
+        <div className={`flipcard ${flip ? 'flipped' : ''}`}>
+            <div className="flips">
                 <div className="topFlip">
                     <div className="top">
                         <h1>{currentValue}</h1>
@@ -29,4 +38,4 @@ function FlipCard({ initialValue, title }) {
     );
 }
 
-export default FlipCard
+export default FlipCard;
