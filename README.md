@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/screenshots/launch_Desktop.png)
-![](./src/screenshots/launch_mobile.png)
+![](./src/screenshots/countdown_desktop.png)
+![](./src/screenshots/countdown_mobile.png)
 
 ### Links
 
