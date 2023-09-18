@@ -10,7 +10,7 @@ function Countdown() {
 
   useEffect(() => {
     const currentYear = new Date().getFullYear();
-    const countdownDate = new Date(`June 30 ${currentYear} 00:00:00`);
+    const countdownDate = new Date(`December 30 ${currentYear} 00:00:00`);
 
     const updateTimer = () => {
       const currentDate = new Date();
