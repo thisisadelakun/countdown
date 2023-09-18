@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/thisisadelakun/countdown)
-- Live Site URL: [Countdown](https://your-live-site-url.com)
+- Live Site URL: [Countdown](https://https://adelakuncountdown.netlify.app/)
 
 ## My process
 
